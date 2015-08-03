@@ -1,0 +1,292 @@
+[ 2015-08-03T18:44:24+08:00 ] 127.0.0.1 /wwwroot/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_hooks` [ RunTime:0.0200s ]
+SQL: SELECT `name`,`addons` FROM `yunzhi_hooks`  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_addons` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name` FROM `yunzhi_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0200s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.340000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.340000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-03T18:44:24+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2015-08-03T18:44:25+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-03T18:44:38+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: lite F:\xampp\htdocs\wwwroot\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yunzhi_member` [ RunTime:0.0240s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `yunzhi_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_action` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `yunzhi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_member` [ RunTime:0.0200s ]
+SQL: SELECT `nickname` FROM `yunzhi_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `yunzhi_action_log` [ RunTime:0.0280s ]
+SQL: INSERT INTO `yunzhi_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1438598677','mengyunzhi在2015-08-03 18:44登录了后台') [ RunTime:0.0190s ]
+SQL: SELECT * FROM `yunzhi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0200s ]
+NOTIC: [8] Undefined offset: 1 F:\xampp\htdocs\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given F:\xampp\htdocs\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1438512277 LIMIT 1   [ RunTime:0.0190s ]
+SQL: UPDATE `yunzhi_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0190s ]
+SQL: UPDATE `yunzhi_member` SET `login`=`login`+1,`last_login_time`='1438598677',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0130s ]
+
+[ 2015-08-03T18:44:38+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_menu` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`title`,`url` FROM `yunzhi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0150s ]
+SQL: SELECT `pid` FROM `yunzhi_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `yunzhi_addons` [ RunTime:0.0190s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `yunzhi_member` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_member` LIMIT 1   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_action_log` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_action_log` LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_document` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_category` LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `yunzhi_model` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_model` LIMIT 1   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.269012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.266012s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.637028s ]
+SQL: select version() as v; [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.354016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.384016s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.384016s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.687028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.404016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.414016s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.030000s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.680028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.404016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.414016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-03T19:03:47+08:00 ] 127.0.0.1 /onethink/public/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_menu` [ RunTime:0.0312s ]
+SQL: SELECT `id`,`title`,`url` FROM `yunzhi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0156s ]
+SQL: SELECT `pid` FROM `yunzhi_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `yunzhi_addons` [ RunTime:0.0156s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `yunzhi_member` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_member` LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `yunzhi_action_log` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_action_log` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_document` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_category` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_model` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_model` LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.280800s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.265200s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.405601s ]
+SQL: select version() as v; [ RunTime:0.0312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.124801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.234001s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.234001s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.530401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.249601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.249601s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.015600s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.514801s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.249601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.265201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-03T19:05:07+08:00 ] 127.0.0.1 /onethink/public/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_menu` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`title`,`url` FROM `yunzhi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0156s ]
+SQL: SELECT `pid` FROM `yunzhi_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `yunzhi_addons` [ RunTime:0.0156s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `yunzhi_member` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_member` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_action_log` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_action_log` LIMIT 1   [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_document` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_category` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yunzhi_model` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yunzhi_model` LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.436800s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.234000s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.561601s ]
+SQL: select version() as v; [ RunTime:0.0156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.109201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.140401s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.140401s ]
+SQL: SELECT `config` FROM `yunzhi_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.608401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.156001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.171601s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.031200s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.405601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.156001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.171601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
