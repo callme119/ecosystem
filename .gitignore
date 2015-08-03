@@ -1,3 +1,10 @@
+#netbeans 版本控制 
+nbproject
+
+#thinkphp 运行文件
+Runtime
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
