@@ -1,0 +1,1524 @@
+[ 2015-08-04T08:34:51+08:00 ] 127.0.0.1 /ecosystem/public/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.092005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.193011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027002s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0650s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648485 AND ( deadline = 0 OR deadline > 1438648485 ) ORDER BY `id` DESC  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.240013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1438648485 AND ( deadline = 0 OR deadline > 1438648485 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.116006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2015-08-04T08:36:01+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0190s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648561 AND ( deadline = 0 OR deadline > 1438648561 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.111006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1438648561 AND ( deadline = 0 OR deadline > 1438648561 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.070004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:36:26+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648586 AND ( deadline = 0 OR deadline > 1438648586 ) ORDER BY `id` DESC  [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.105005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1438648586 AND ( deadline = 0 OR deadline > 1438648586 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.123005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:36:54+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648613 AND ( deadline = 0 OR deadline > 1438648613 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.105006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1438648613 AND ( deadline = 0 OR deadline > 1438648613 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.108006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-04T08:37:01+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648620 AND ( deadline = 0 OR deadline > 1438648620 ) ORDER BY `id` DESC  [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0290s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.114005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1438648620 AND ( deadline = 0 OR deadline > 1438648620 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.075003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:38:14+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0190s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648693 AND ( deadline = 0 OR deadline > 1438648693 ) ORDER BY `id` DESC  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.103006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','2') AND `create_time` < 1438648693 AND ( deadline = 0 OR deadline > 1438648693 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.110007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:38:45+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0230s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648724 AND ( deadline = 0 OR deadline > 1438648724 ) ORDER BY `id` DESC  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.123007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648724 AND ( deadline = 0 OR deadline > 1438648724 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.138008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:39:05+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0300s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648744 AND ( deadline = 0 OR deadline > 1438648744 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.106006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648744 AND ( deadline = 0 OR deadline > 1438648744 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.117007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:39:31+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648771 AND ( deadline = 0 OR deadline > 1438648771 ) ORDER BY `id` DESC  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.110006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648771 AND ( deadline = 0 OR deadline > 1438648771 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.122007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:40:58+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648858 AND ( deadline = 0 OR deadline > 1438648858 ) ORDER BY `id` DESC  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0320s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.131005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648858 AND ( deadline = 0 OR deadline > 1438648858 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.133008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:41:38+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0130s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648897 AND ( deadline = 0 OR deadline > 1438648897 ) ORDER BY `id` DESC  [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.127008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648897 AND ( deadline = 0 OR deadline > 1438648897 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:42:06+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648925 AND ( deadline = 0 OR deadline > 1438648925 ) ORDER BY `id` DESC  [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.123006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438648925 AND ( deadline = 0 OR deadline > 1438648925 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.122007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:42:58+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0260s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438648977 AND ( deadline = 0 OR deadline > 1438648977 ) ORDER BY `id` DESC  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0300s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.115003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0270s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438648977 AND ( deadline = 0 OR deadline > 1438648977 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.139003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:43:26+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649005 AND ( deadline = 0 OR deadline > 1438649005 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.128507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649005 AND ( deadline = 0 OR deadline > 1438649005 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.130007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:44:00+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0190s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649040 AND ( deadline = 0 OR deadline > 1438649040 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.110005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649040 AND ( deadline = 0 OR deadline > 1438649040 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.121006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:44:33+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0230s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649073 AND ( deadline = 0 OR deadline > 1438649073 ) ORDER BY `id` DESC  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.125005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649073 AND ( deadline = 0 OR deadline > 1438649073 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.124006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:47:47+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649266 AND ( deadline = 0 OR deadline > 1438649266 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.122007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649266 AND ( deadline = 0 OR deadline > 1438649266 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:48:25+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0230s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649305 AND ( deadline = 0 OR deadline > 1438649305 ) ORDER BY `id` DESC  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.140008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649305 AND ( deadline = 0 OR deadline > 1438649305 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.136008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:49:08+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649348 AND ( deadline = 0 OR deadline > 1438649348 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.105006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649348 AND ( deadline = 0 OR deadline > 1438649348 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.118007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:49:50+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649389 AND ( deadline = 0 OR deadline > 1438649389 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.111006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649389 AND ( deadline = 0 OR deadline > 1438649389 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.118006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-08-04T08:50:23+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0190s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649422 AND ( deadline = 0 OR deadline > 1438649422 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.105006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649422 AND ( deadline = 0 OR deadline > 1438649422 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.117006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-08-04T08:50:47+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649446 AND ( deadline = 0 OR deadline > 1438649446 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.123007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','40','39','2') AND `create_time` < 1438649446 AND ( deadline = 0 OR deadline > 1438649446 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:51:24+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649483 AND ( deadline = 0 OR deadline > 1438649483 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.107006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649483 AND ( deadline = 0 OR deadline > 1438649483 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.122007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-08-04T08:52:23+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0230s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649543 AND ( deadline = 0 OR deadline > 1438649543 ) ORDER BY `id` DESC  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.126007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649543 AND ( deadline = 0 OR deadline > 1438649543 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.129007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:52:49+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0190s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649568 AND ( deadline = 0 OR deadline > 1438649568 ) ORDER BY `id` DESC  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.098006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649568 AND ( deadline = 0 OR deadline > 1438649568 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:53:21+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0220s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649600 AND ( deadline = 0 OR deadline > 1438649600 ) ORDER BY `id` DESC  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.118007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649600 AND ( deadline = 0 OR deadline > 1438649600 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.123007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:53:45+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649624 AND ( deadline = 0 OR deadline > 1438649624 ) ORDER BY `id` DESC  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.111006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649624 AND ( deadline = 0 OR deadline > 1438649624 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.116006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:54:20+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649659 AND ( deadline = 0 OR deadline > 1438649659 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.128007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649659 AND ( deadline = 0 OR deadline > 1438649659 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-08-04T08:54:58+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649697 AND ( deadline = 0 OR deadline > 1438649697 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.115007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649697 AND ( deadline = 0 OR deadline > 1438649697 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.115007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:55:26+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649725 AND ( deadline = 0 OR deadline > 1438649725 ) ORDER BY `id` DESC  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.112007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649725 AND ( deadline = 0 OR deadline > 1438649725 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.121007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:56:01+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0180s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649761 AND ( deadline = 0 OR deadline > 1438649761 ) ORDER BY `id` DESC  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.113007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649761 AND ( deadline = 0 OR deadline > 1438649761 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.111007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:56:45+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649804 AND ( deadline = 0 OR deadline > 1438649804 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.116006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649804 AND ( deadline = 0 OR deadline > 1438649804 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.116007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-04T08:57:11+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0220s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649830 AND ( deadline = 0 OR deadline > 1438649830 ) ORDER BY `id` DESC  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.121006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649830 AND ( deadline = 0 OR deadline > 1438649830 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.127007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-08-04T08:58:41+08:00 ] 127.0.0.1 /ecosystem/public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_config` [ RunTime:0.0210s ]
+SQL: SELECT `type`,`name`,`value` FROM `yunzhi_config` WHERE `status` = 1  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_document` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1438649920 AND ( deadline = 0 OR deadline > 1438649920 ) ORDER BY `id` DESC  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunzhi_channel` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `yunzhi_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.119006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `yunzhi_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `yunzhi_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `yunzhi_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','39','40','2') AND `create_time` < 1438649920 AND ( deadline = 0 OR deadline > 1438649920 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yunzhi_category` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `yunzhi_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.119007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
