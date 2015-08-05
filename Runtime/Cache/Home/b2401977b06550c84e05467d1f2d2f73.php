@@ -31,7 +31,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="<?php echo U('index/index');?>">Ecosystem</a>
+            <a class="brand" href="<?php echo U('index/index');?>">OneThink</a>
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -73,45 +73,40 @@
 	<!-- 主体 -->
 	
     <header class="jumbotron subhead" id="overview">
-        <div class="container">
-            <h2>这里是实验室简介</h2>
-            <p class="lead"></p>
-        </div>
-    </header>
+		<div class="container">
+			<h2><?php echo ($info["title"]); ?></h2>
+			<p>
+				<span  class="pull-left">
+					<span class="author"><?php echo (get_username($info["uid"])); ?></span>
+					<span> 发表于 <?php echo (date('Y-m-d H:i',$info["create_time"])); ?></span>
+				</span>
+				<span class="pull-right">
+					<?php $prev = D('Document')->prev($info); if(!empty($prev)): ?><a href="<?php echo U('?id='.$prev['id']);?>">上一篇</a><?php endif; ?>
+                    <?php $next = D('Document')->next($info); if(!empty($next)): ?><a href="<?php echo U('?id='.$next['id']);?>">下一篇</a><?php endif; ?>
+				</span>
+			</p>
+		</div>
+	</header>
 
 <div id="main-container" class="container">
     <div class="row">
         
-<!-- 左侧 nav
-================================================== -->
-    <div class="span3 bs-docs-sidebar">
-        <ul class="nav nav-list bs-docs-sidenav">
-            <?php echo W('Category/lists', array(1, true));?>
-        </ul>
-    </div>
-
+        <!-- 左侧 nav
+        ================================================== -->
+            <div class="span3 bs-docs-sidebar">
+                
+                <ul class="nav nav-list bs-docs-sidenav">
+                    <?php echo W('Category/lists', array($category['id'], ACTION_NAME == 'index'));?>
+                </ul>
+            </div>
         
-    <div class="span9">
+        
+    <div class="span9 main-content">
         <!-- Contents
         ================================================== -->
-        <section id="contents">
-            <?php $__CATE__ = D('Category')->getChildrenId(1);$__LIST__ = D('Document')->page(!empty($_GET["p"])?$_GET["p"]:1,10)->lists($__CATE__, '`level` DESC,`id` DESC', 1,true); if(is_array($__LIST__)): $i = 0; $__LIST__ = $__LIST__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="">
-                    <h3><a href="<?php echo U('Article/detail?id='.$article['id']);?>"><?php echo ($article["title"]); ?></a></h3>
-                </div>
-                <div>
-                    <p class="lead"><?php echo ($article["description"]); ?></p>
-                </div>
-                <div>
-                    <span><a href="<?php echo U('Article/detail?id='.$article['id']);?>">查看全文</a></span>
-                    <span class="pull-right">
-                        <span class="author"><?php echo (get_username($article["uid"])); ?></span>
-                        <span>于 <?php echo (date('Y-m-d H:i',$article["create_time"])); ?></span> 发表在 <span>
-                        <a href="<?php echo U('Article/lists?category='.get_category_name($article['category_id']));?>"><?php echo (get_category_title($article["category_id"])); ?></a></span> ( 阅读：<?php echo ($article["view"]); ?> )
-                    </span>
-                </div>
-                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
-
-        </section>
+        <section id="contents"><?php echo ($info["content"]); ?></section>
+        <hr/>
+        <?php echo hook('documentDetailAfter',$info);?>
     </div>
 
     </div>
