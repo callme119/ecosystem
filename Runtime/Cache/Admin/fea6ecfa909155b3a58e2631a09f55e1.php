@@ -9,12 +9,12 @@
 			<div class="sys-info">
 				<table>
 					<tr>
-						<th>总策划</th>
-						<td>刘晨</td>
+						<th>梦云智</th>
+						<td>重点生态物理实验室</td>
 					</tr>
 					<tr>
 						<th>产品设计及研发团队</th>
-						<td>刘晨 左家梓 朱亚杰 杨维杰 花杰 张亚俊</td>
+						<td>callme119团队</td>
 					</tr>
 					<tr>
 						<th>界面及用户体验团队</th>
@@ -22,7 +22,7 @@
 					</tr>
 					<tr>
 						<th>官方网址</th>
-						<td><a href="http://www.onethink.cn" target="_blank">www.onethink.cn</a></td>
+						<td><a href="http://www.onethink.cn" target="_blank">www.callme119.com</a></td>
 					</tr>
 					<tr>
 						<th>官方QQ群</th>

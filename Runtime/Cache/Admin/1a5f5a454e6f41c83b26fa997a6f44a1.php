@@ -79,7 +79,8 @@
     <!-- 主体 -->
     <div id="indexMain" class="index-main">
        <!-- 插件块 -->
-       <div class="container-span"><?php echo hook('AdminIndex');?></div>
+       <div class="container-span"><?php echo hook('AdminIndex'); echo hook('Advs', '4');?></div>
+
     </div>
 
         </div>

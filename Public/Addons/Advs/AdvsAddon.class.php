@@ -92,7 +92,7 @@ SQL;
         public function Advs($param){
         	$list = D('Addons://Advs/Advs')->AdvsList($param);
         	if(!$list)
-        		return ;
+        		echo "error" ;
 			$this->assign('list',$list);
 			$this->display('widget');
         }              
