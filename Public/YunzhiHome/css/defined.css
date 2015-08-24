@@ -15,8 +15,8 @@
     background-size:contain;
     
 }
-.def{
-    margin-bottom: 10px;
+.logo,.nav-def{
+    margin-bottom: 1px;
 }
 .bg-list{
     background: url(../images/bg-list.jpg) center ;
