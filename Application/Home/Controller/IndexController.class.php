@@ -22,9 +22,7 @@ class IndexController extends HomeController {
 
         $category = D('Category')->getTree();
         $lists    = D('Document')->lists(null);
-        var_dump($lists);
         $path = $this->getSliderImg($lists);
-        var_dump($path);
         $this->assign('path',$path[0]);//图片路径
         $this->assign('category',$category);//栏目
         $this->assign('lists',$lists);//列表
