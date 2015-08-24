@@ -24,4 +24,11 @@ class PictureModel extends Model{
         }
         return $pic;
 	}
+
+        public function getPictureUrlById($id)
+        {
+                $map['id'] = $id;
+                $data = $this->field('path')->where($map)->find();
+                return $data['path'];
+        }
 }
