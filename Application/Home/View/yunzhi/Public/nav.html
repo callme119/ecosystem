@@ -1,42 +1,18 @@
 <block name="nav">
 	<div class="row def"><!--导航-->
 		<div class="col-md-12">
-			<nav class="navbar navbar-default" role="navigation">
 				<div class="collapse navbar-collapse nav-define" id="bs-example-navbar-collapse-1">
+					
 					<ul class="nav navbar-nav">
-						<li class="active-define">
-							<a href="#"><span class="li-define">首页</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">实验室概况</span></a>
-						</li>
-						<li>
-							<a href="list.html"><span class="li-define">新闻通知</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">研究队伍</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">人才培养</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">科研成果</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">开放基金</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">仪器设备</span></a>
-						</li>
-						<li>
-							<a href="#"><span class="li-define">规章制度</span></a>
-						</li>
-						<li>
-							<a href=""><span class="li-define">联系我们</span></a>
-						</li>
-					</ul>
+                    <think:nav name="nav">
+                    	<eq name="nav.pid" value="0">
+                        <li>
+                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="li-define">{$nav.title}</span></a>
+                        </li>
+                        </eq>
+                    </think:nav>
+                </ul> 
 				</div>
-			</nav>
 		</div>
 	</div>
 </block>
