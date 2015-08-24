@@ -10,29 +10,8 @@
 .li-define{
     color: #fff;
 }
-.tittle-define{
-    font-family: "微软雅黑";
-}
-.bg{
-    background: url(../images/bg-4.jpg)  center fixed;
-    background-size:contain;
-   
-}
-.bg-slider{
-    background: url(../images/bg-8.jpg) no-repeat bottom;
-    background-size:contain;
-    
-}
-.bg-protect{
-    background: url(../images/1.jpg) center fixed;
-    background-size:contain;
-    
-}
-
-
-
-.list-define{
-    padding-top: 20px;
+.def{
+    margin-bottom: 10px;
 }
 .bg-list{
     background: url(../images/bg-list.jpg) center ;
