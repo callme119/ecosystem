@@ -59,10 +59,9 @@ return array(
     'TMPL_PARSE_STRING' => array(
         '__STATIC__' => __ROOT__ . '/static',
         '__ADDONS__' => __ROOT__ . '/' . MODULE_NAME . '/Addons',
-        '__IMG__'    => __ROOT__ . '/' . MODULE_NAME . '/images',
-        '__CSS__'    => __ROOT__ . '/' . MODULE_NAME . '/css',
-        '__JS__'     => __ROOT__ . '/' . MODULE_NAME . '/js',
-        '__YUNZHIHOME__'     => __ROOT__ . '/' . MODULE_NAME . '/YunzhiHome',
+        '__IMG__'    => __ROOT__ . '/' . MODULE_NAME . '/YunzhiHome/images',
+        '__CSS__'    => __ROOT__ . '/' . MODULE_NAME . '/YunzhiHome/css',
+        '__JS__'     => __ROOT__ . '/' . MODULE_NAME . '/YunzhiHome/js',
     ),
 
     /* SESSION 和 COOKIE 配置 */
