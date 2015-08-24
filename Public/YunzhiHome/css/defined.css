@@ -10,6 +10,11 @@
 .li-define{
     color: #fff;
 }
+.bg-protect{
+    background: url(../images/1.jpg) center fixed;
+    background-size:contain;
+    
+}
 .def{
     margin-bottom: 10px;
 }
