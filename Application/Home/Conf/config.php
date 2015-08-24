@@ -62,6 +62,7 @@ return array(
         '__IMG__'    => __ROOT__ . '/' . MODULE_NAME . '/images',
         '__CSS__'    => __ROOT__ . '/' . MODULE_NAME . '/css',
         '__JS__'     => __ROOT__ . '/' . MODULE_NAME . '/js',
+        '__YUNZHIHOME__'     => __ROOT__ . '/' . MODULE_NAME . '/YunzhiHome',
     ),
 
     /* SESSION 和 COOKIE 配置 */
