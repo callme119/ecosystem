@@ -28,11 +28,7 @@
     background-size:contain;
     
 }
-.bg-foot{
-    background: url(../images/bg-2.jpg) center fixed;
-    background-size:contain;
-   
-}
+
 
 
 .list-define{
@@ -78,4 +74,20 @@
 }
 .thumbnail{
     padding:9px;color:#333;border-width:1px 0px 0px 0px;
+}
+.footer-def{
+    width: 100%;
+    margin: 50px auto 40px;
+    border-top: 3px solid #0160AA;
+    padding-top: 20px;
+    text-align: center;
+    color: #000;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+.media-def{
+    margin-right: 10px;
+    max-width: 310px;
 }
