@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>欢迎您登录OneThink</title>
-        <link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/login.css" media="all">
-       	<link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/login.css" media="all">
+       	<link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
     </head>
     <body id="login-page">
         <div id="main-content">
@@ -47,10 +47,10 @@
             </div>
         </div>
 	<!--[if lt IE 9]>
-    <script type="text/javascript" src="/ecosystem/public/static/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-1.10.2.min.js"></script>
     <![endif]-->
     <!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="/ecosystem/public/static/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-2.0.3.min.js"></script>
     <!--<![endif]-->
     <script type="text/javascript">
     	/* 登陆表单获取焦点变色 */

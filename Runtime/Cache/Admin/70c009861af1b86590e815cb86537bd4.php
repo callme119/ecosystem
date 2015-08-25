@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title><?php echo ($meta_title); ?>|OneThink管理平台</title>
-    <link href="/ecosystem/public/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/base.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/common.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/module.css">
-    <link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/style.css" media="all">
-	<link rel="stylesheet" type="text/css" href="/ecosystem/public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
+    <link href="/dhy/ecosystem/public/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/module.css">
+    <link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/dhy/ecosystem/public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
      <!--[if lt IE 9]>
-    <script type="text/javascript" src="/ecosystem/public/static/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-1.10.2.min.js"></script>
     <![endif]--><!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="/ecosystem/public/static/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="/ecosystem/public/Admin/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/Admin/js/jquery.mousewheel.js"></script>
     <!--<![endif]-->
     
 </head>
@@ -118,17 +118,17 @@
     <script type="text/javascript">
     (function(){
         var ThinkPHP = window.Think = {
-            "ROOT"   : "/ecosystem/public", //当前网站地址
-            "APP"    : "/ecosystem/public/admin.php", //当前项目地址
-            "PUBLIC" : "/ecosystem/public/Public", //项目公共目录地址
+            "ROOT"   : "/dhy/ecosystem/public", //当前网站地址
+            "APP"    : "/dhy/ecosystem/public/admin.php", //当前项目地址
+            "PUBLIC" : "/dhy/ecosystem/public/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
             "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
         }
     })();
     </script>
-    <script type="text/javascript" src="/ecosystem/public/static/think.js"></script>
-    <script type="text/javascript" src="/ecosystem/public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/static/think.js"></script>
+    <script type="text/javascript" src="/dhy/ecosystem/public/Admin/js/common.js"></script>
     <script type="text/javascript">
         +function(){
             var $window = $(window), $subnav = $("#subnav"), url;

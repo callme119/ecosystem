@@ -5,9 +5,9 @@
 		</script><?php break;?>
 	<?php case "2": ?>
 		<input type="hidden" name="parse" value="0">
-		<?php if(($addons_config["editor_wysiwyg"]) == "1"): ?><link rel="stylesheet" href="/ecosystem/public/static/kindeditor/default/default.css" />
-			<script charset="utf-8" src="/ecosystem/public/static/kindeditor/kindeditor-min.js"></script>
-			<script charset="utf-8" src="/ecosystem/public/static/kindeditor/zh_CN.js"></script>
+		<?php if(($addons_config["editor_wysiwyg"]) == "1"): ?><link rel="stylesheet" href="/dhy/ecosystem/public/static/kindeditor/default/default.css" />
+			<script charset="utf-8" src="/dhy/ecosystem/public/static/kindeditor/kindeditor-min.js"></script>
+			<script charset="utf-8" src="/dhy/ecosystem/public/static/kindeditor/zh_CN.js"></script>
 			<script type="text/javascript">
 				var editor_<?php echo ($addons_data["name"]); ?>;
 				KindEditor.ready(function(K) {
@@ -41,12 +41,12 @@
 			</script>
 
 		<?php else: ?>
-			<script type="text/javascript" charset="utf-8" src="/ecosystem/public/static/ueditor/ueditor.config.js"></script>
-			<script type="text/javascript" charset="utf-8" src="/ecosystem/public/static/ueditor/ueditor.all.js"></script>
-			<script type="text/javascript" charset="utf-8" src="/ecosystem/public/static/ueditor/lang/zh-cn/zh-cn.js"></script>
+			<script type="text/javascript" charset="utf-8" src="/dhy/ecosystem/public/static/ueditor/ueditor.config.js"></script>
+			<script type="text/javascript" charset="utf-8" src="/dhy/ecosystem/public/static/ueditor/ueditor.all.js"></script>
+			<script type="text/javascript" charset="utf-8" src="/dhy/ecosystem/public/static/ueditor/lang/zh-cn/zh-cn.js"></script>
 			<script type="text/javascript">
 				$('textarea[name="<?php echo ($addons_data["name"]); ?>"]').attr('id', 'editor_id_<?php echo ($addons_data["name"]); ?>');
-				window.UEDITOR_HOME_URL = "/ecosystem/public/static/ueditor";
+				window.UEDITOR_HOME_URL = "/dhy/ecosystem/public/static/ueditor";
 				window.UEDITOR_CONFIG.initialFrameHeight = parseInt('<?php echo ($addons_config["editor_height"]); ?>');
 				window.UEDITOR_CONFIG.scaleEnabled = <?php if(($addons_config["editor_resize_type"]) == "1"): ?>true<?php else: ?>false<?php endif; ?>;
 				window.UEDITOR_CONFIG.imageUrl = '<?php echo addons_url("EditorForAdmin://Upload/ue_upimg");?>';
@@ -55,10 +55,10 @@
 				UE.getEditor('editor_id_<?php echo ($addons_data["name"]); ?>');
 			</script><?php endif; break;?>
 	<?php case "3": ?>
-		<script type="text/javascript" src="/ecosystem/public/static/jquery-migrate-1.2.1.min.js"></script>
-		<script charset="utf-8" src="/ecosystem/public/static/xheditor/xheditor-1.2.1.min.js"></script>
-		<script charset="utf-8" src="/ecosystem/public/static/xheditor/xheditor_lang/zh-cn.js"></script>
-		<script type="text/javascript" src="/ecosystem/public/static/xheditor/xheditor_plugins/ubb.js"></script>
+		<script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-migrate-1.2.1.min.js"></script>
+		<script charset="utf-8" src="/dhy/ecosystem/public/static/xheditor/xheditor-1.2.1.min.js"></script>
+		<script charset="utf-8" src="/dhy/ecosystem/public/static/xheditor/xheditor_lang/zh-cn.js"></script>
+		<script type="text/javascript" src="/dhy/ecosystem/public/static/xheditor/xheditor_plugins/ubb.js"></script>
 		<script type="text/javascript">
 		var submitForm = function (){
 			$('textarea[name="<?php echo ($addons_data["name"]); ?>"]').closest('form').submit();
@@ -77,9 +77,9 @@
 		</script>
 		<input type="hidden" name="parse" value="1"><?php break;?>
 	<?php case "4": ?>
-		<link rel="stylesheet" href="/ecosystem/public/static/thinkeditor/skin/default/style.css">
-		<script type="text/javascript" src="/ecosystem/public/static/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="/ecosystem/public/static/thinkeditor/jquery.thinkeditor.js"></script>
+		<link rel="stylesheet" href="/dhy/ecosystem/public/static/thinkeditor/skin/default/style.css">
+		<script type="text/javascript" src="/dhy/ecosystem/public/static/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/dhy/ecosystem/public/static/thinkeditor/jquery.thinkeditor.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				$('textarea[name="<?php echo ($addons_data["name"]); ?>"]').attr('id', 'editor_id_<?php echo ($addons_data["name"]); ?>');

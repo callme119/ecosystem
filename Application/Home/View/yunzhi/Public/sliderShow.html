@@ -1,2 +1,35 @@
 <block name="sliderShow">
+	<div class="row def"><!--幻灯片-->
+	    <div class="col-md-12">
+	        <div class="carousel slide" id="carousel-819885">
+	            <ol class="carousel-indicators">
+	            <foreach name="picture" item="vo" >
+	            	<li class="active" data-slide-to="{$vo.key}"
+	            	data-target="#carousel-819885">
+	            	</li>
+	            </foreach>
+	            </ol>
+	            <div class="carousel-inner">
+	            <foreach name="picture" item="vo">
+	               		<eq name="vo.key" value="0">
+	               			<div class="item  active">
+	               		<else/>
+	               			<div class="item">
+	               		</eq>
+	                    <img alt="重点实验室" src=" __ROOT__{$vo.path}" class="img-responsive" />
+	                    <div class="carousel-caption">
+	                        <h4 class="text-primary">
+	                        	{$vo.title}
+	                        </h4>
+	                        <p>
+	                        </p>
+	                    </div>
+	                </div>	            
+	        	</foreach>
+	        	</div>
+	             <a class="left carousel-control" href="#carousel-819885" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+	             <a class="right carousel-control" href="#carousel-819885" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	        </div>
+	    </div>
+	</div>
 </block>
