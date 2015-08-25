@@ -28,7 +28,6 @@ class PictureWidget extends Controller{
 			$picture[$key][title] = $value['description'];
 			$picture[$key][key] = $key;
 		}
-		var_dump($picture);
 		$this->assign('picture', $picture);
 		$this->display('Public/sliderShow');
 	}
