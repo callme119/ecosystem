@@ -21,11 +21,14 @@ class PictureWidget extends Controller{
 
 		//根据文档信息取图片信息
 		$picture = array();
+		$key = array();
 		foreach ($document as $key => $value) {
 			$pic = new Model\PictureModel;
 			$picture[$key][path] = $pic->getPictureUrlById($value['cover_id']);
 			$picture[$key][title] = $value['description'];
+			$picture[$key][key] = $key;
 		}
+		var_dump($picture);
 		$this->assign('picture', $picture);
 		$this->display('Public/sliderShow');
 	}
