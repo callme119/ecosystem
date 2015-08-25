@@ -3,22 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/ecosystem/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/ecosystem/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="/ecosystem/Public/static/bootstrap/css/docs.css" rel="stylesheet">
-<link href="/ecosystem/Public/static/bootstrap/css/onethink.css" rel="stylesheet">
+<link href="/dhy/ecosystem/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/dhy/ecosystem/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="/dhy/ecosystem/Public/static/bootstrap/css/docs.css" rel="stylesheet">
+<link href="/dhy/ecosystem/Public/static/bootstrap/css/onethink.css" rel="stylesheet">
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/ecosystem/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/dhy/ecosystem/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/ecosystem/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/dhy/ecosystem/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/ecosystem/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/ecosystem/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dhy/ecosystem/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/dhy/ecosystem/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -144,9 +144,9 @@
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/ecosystem/Public", //当前网站地址
-		"APP"    : "/ecosystem/Public", //当前项目地址
-		"PUBLIC" : "/ecosystem/Public/Public", //项目公共目录地址
+		"ROOT"   : "/dhy/ecosystem/Public", //当前网站地址
+		"APP"    : "/dhy/ecosystem/Public", //当前项目地址
+		"PUBLIC" : "/dhy/ecosystem/Public/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
