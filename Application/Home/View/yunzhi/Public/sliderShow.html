@@ -11,7 +11,11 @@
 	            </ol>
 	            <div class="carousel-inner">
 	            <foreach name="picture" item="vo">
-	               		<div class="item <eq name="vo.key" value="0">active</eq>">
+	               		<eq name="vo.key" value="0">
+	               			<div class="item  active">
+	               		<else/>
+	               			<div class="item">
+	               		</eq>
 	                    <img alt="重点实验室" src=" __ROOT__{$vo.path}" class="img-responsive" />
 	                    <div class="carousel-caption">
 	                        <h4 class="text-primary">
