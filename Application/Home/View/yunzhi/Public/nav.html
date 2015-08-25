@@ -1,18 +1,23 @@
 <block name="nav">
 	<div class="row"><!--导航-->
 		<div class="col-md-12">
-				<div class="collapse navbar-collapse nav-define" id="bs-example-navbar-collapse-1">
-					
-					<ul class="nav navbar-nav">
-                    <think:nav name="nav">
-                    	<eq name="nav.pid" value="0">
-                        <li>
-                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="li-define">{$nav.title}</span></a>
-                        </li>
-                        </eq>
-                    </think:nav>
-                </ul> 
-				</div>
+			<div class="bs-component">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+				                <think:nav name="nav">
+				                	<eq name="nav.pid" value="0">
+				                    <li>
+				                        <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="li-define">{$nav.title}</span></a>
+				                    </li>
+				                    </eq>
+				                </think:nav>
+				            </ul> 
+						</div>
+					</div>
+				</nav>
+			</div>
 		</div>
 	</div>
 </block>
