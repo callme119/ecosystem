@@ -20,7 +20,7 @@ class InfoWidget extends Controller{
 		//获取文章封面图片
 		$pic = new Model\PictureModel;
 		$path = $pic->getPictureUrlById($documentId[0][cover_id]);
-
+		
 		$this->assign('path',$path);
 		$this->assign('info',$Info);
 		$this->display('Public/intro');

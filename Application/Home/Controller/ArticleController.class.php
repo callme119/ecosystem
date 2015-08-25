@@ -47,7 +47,7 @@ class ArticleController extends HomeController {
 	}
 
 	/* 文档模型详情页 */
-	public function detail($id = 0, $p = 1){
+	public function detail($id, $p = 1){
 		/* 标识正确性检测 */
 		if(!($id && is_numeric($id))){
 			$this->error('文档ID错误！');

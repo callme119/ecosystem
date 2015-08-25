@@ -5,10 +5,9 @@
                                 <div class="col-md-12">
                                     <a href="#" class="pull-left"><img class="media-def" src="__ROOT__/{$path}"/></a>
                                     <p>
-                                        {$info.content}
+                                        {$info.description}
                                     </p>
-                                    <p>
-                                        <a class="btn pull-right" href="#">查看更多 »</a>
+                                        <a class="btn pull-right" href="{:U("Article/detail?id=$info[id]")}">查看更多 »</a>
                                     </p>
                                 </div>
                             </div>
