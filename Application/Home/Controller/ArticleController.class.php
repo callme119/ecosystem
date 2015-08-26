@@ -9,6 +9,7 @@
 
 namespace Home\Controller;
 use Home\Model\DocumentModel;
+use Home\Model\PictureModel;
 
 /**
  * 文档模型控制器
@@ -41,17 +42,26 @@ class ArticleController extends HomeController {
 	public function lists($p = 1){
 		/* 分类信息 */
 		$category = $this->category();
-
 		/* 获取当前分类列表 */
-		$Document = D('Document');
-		$list = $Document->page($p, $category['list_row'])->lists($category['id']);
+		$Document = new DocumentModel;
+		$list = $Document->lists($category['id']);
 		if(false === $list){
 			$this->error('获取列表数据失败！');
+		}
+		//取出每个文档的封面图片
+		$article = array();
+		foreach ($list as $key => $value) {
+			$pic = new PictureModel;
+			$article[$key][picture_path] = $pic->getPictureUrlById($value[cover_id]);
+			$article[$key][title] = $value[title];
+			$article[$key][description] = $value[description];
+			$article[$key][id] = $value[id];
+
 		}
 
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
-		$this->assign('list', $list);
+		$this->assign('article', $article);
 		$this->display($category['template_lists']);
 	}
 

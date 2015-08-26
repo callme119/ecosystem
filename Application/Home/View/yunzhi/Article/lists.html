@@ -10,74 +10,19 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
+                        <foreach name="article" item="value">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
+                                <a  href="#"><img alt="" src="__ROOT__/{$value.picture_path}" width="auto" height="200px"></a>
                                 <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
+                                    <a href="#" class="btn" type="button"><h4>{$value.title}</h4></a>
                                     <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
+                                        {$value.description}<a href='#' class="btn" type="button">更多>></a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
-                                <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
-                                    <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
-                                <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
-                                    <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
-                                <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
-                                    <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
-                                <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
-                                    <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__IMG__/wxh.jpg" width="160" height="200"></a>
-                                <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>2015级硕士&nbsp; 王小红</h4></a>
-                                    <p>
-                                        简介简介简介简介简介简介简介简介简介简介简介简介<a href="#" class="btn" type="button">更多>></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        </foreach>
                     </div>
                 </div>
                 <div class="panel-footer">
