@@ -13,7 +13,7 @@
                         <article:list name="value" category="$_GET['category']" child="true">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <a  href="{:U('Article/detail?id='.$value['id'])}"><img alt="" src="__ROOT__/{:W('')}" width="auto" height="200px"></a>
+                                <a  href="{:U('Article/detail?id='.$value['id'])}"><img alt="" src="__ROOT__/{:W('Picture/getPictureUrlById',array($value['cover_id']))}"></a>
                                 <div class="caption">
                                     <a href="{:U('Article/detail?id='.$value['id'])}" class="btn" type="button"><h4>{$value.title}</h4></a>
                                     <p>

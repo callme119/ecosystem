@@ -3,6 +3,7 @@ namespace Home\Widget;
 use Think\Controller;
 use Home\Model;
 use Home\Model\DocumentModel;
+use Home\Model\PictureModel;
 
 /**
  * 图片widget
@@ -31,5 +32,13 @@ class PictureWidget extends Controller{
 		$this->assign('picture', $picture);
 		$this->display('Public/sliderShow');
 	}
+
+	public function getPictureUrlById($id)
+        {
+                $map['id'] = $id;
+                $pic = new PictureModel;
+                $data = $pic->field('path')->where($map)->find();
+                echo $data['path'];
+        }
 	
 }
