@@ -3,9 +3,7 @@
     <div class="row main">
         <div class="col-md-3">
             <ul>
-                <li class="leftmenutitle">
-                    新闻通知<span class="divider">/</span>通知公告
-                </li>
+                            {:W('Category/lists', array($category['id'], ACTION_NAME == 'index'))}
             </ul>
         </div>
         <div class="col-md-9">

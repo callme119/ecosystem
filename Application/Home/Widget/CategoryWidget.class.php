@@ -23,12 +23,13 @@ class CategoryWidget extends Controller{
 		if($child){
 			$category = D('Category')->getTree($cate, $field);
 			$category = $category['_'];
-		} else {
-			$category = D('Category')->getSameLevel($cate, $field);
-		}
+		} 
+		//else {
+		// 	$category = D('Category')->getSameLevel($cate, $field);
+		// }
 		$this->assign('category', $category);
 		$this->assign('current', $cate);
-		$this->display('Category/lists');
+		$this->display('Public/leftnav');
 	}
 	
 }
