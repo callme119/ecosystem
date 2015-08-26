@@ -30,6 +30,7 @@ class ArticleController extends HomeController {
             $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
         }
         $p =$page->show();
+        var_dump($p);
         $this->assign('_page', $p? $p: '');
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
