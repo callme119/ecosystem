@@ -56,8 +56,17 @@ class ArticleController extends HomeController {
 			$article[$key][title] = $value[title];
 			$article[$key][description] = $value[description];
 			$article[$key][id] = $value[id];
-
 		}
+		var_dump($list);
+		//调用分页
+		$total = count($article);
+		$listRows = 6;  
+		$page = new \Think\Page($total, $listRows);
+        if($total>$listRows){
+            $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
+        }
+        $p =$page->show();
+        $this->assign('_page', $p? $p: '');
 
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
