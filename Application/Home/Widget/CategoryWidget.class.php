@@ -24,9 +24,9 @@ class CategoryWidget extends Controller{
 			$category = D('Category')->getTree($cate, $field);
 			$category = $category['_'];
 		} 
-		//else {
-		// 	$category = D('Category')->getSameLevel($cate, $field);
-		// }
+		else {
+			$category = D('Category')->getSameLevel($cate, $field);
+		}
 		$this->assign('category', $category);
 		$this->assign('current', $cate);
 		$this->display('Public/leftnav');

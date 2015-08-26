@@ -76,6 +76,7 @@ class CategoryModel extends Model{
             $info = $list;
         }
 
+
         return $info;
     }
 
