@@ -22,7 +22,7 @@ class ArticleController extends HomeController {
 
 		//频道页只显示模板，默认不读取任何内容
 		//内容可以通过模板标签自行定制
-		var_dump($category);
+		
 		$total = $category[list_row];
 		$listRows = 5;  
 		$page = new \Think\Page($total, $listRows);
@@ -30,7 +30,7 @@ class ArticleController extends HomeController {
             $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
         }
         $p =$page->show();
-        var_dump($p);
+        
         $this->assign('_page', $p? $p: '');
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
