@@ -10,19 +10,19 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <foreach name="article" item="value">
+                        <article:list name="value" category="$_GET['category']" child="true">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <a  href="#"><img alt="" src="__ROOT__/{$value.picture_path}" width="auto" height="200px"></a>
+                                <a  href="{:U('Article/detail?id='.$value['id'])}"><img alt="" src="__ROOT__/{:W('')}" width="auto" height="200px"></a>
                                 <div class="caption">
-                                    <a href="#" class="btn" type="button"><h4>{$value.title}</h4></a>
+                                    <a href="{:U('Article/detail?id='.$value['id'])}" class="btn" type="button"><h4>{$value.title}</h4></a>
                                     <p>
-                                        {$value.description}<a href='#' class="btn" type="button">更多>></a>
+                                        {$value.description}<a href='{:U('Article/detail?id='.$value['id'])}' class="btn" type="button">更多>></a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        </foreach>
+                        </article:list>
                     </div>
                 </div>
                 <div class="panel-footer">
