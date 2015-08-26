@@ -12,7 +12,7 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <article:list name="article" category="42" child="true">
+                        <article:list name="article" category="$_GET['category']" child="true">
                             <li class="textlist1" style="list-style-type:none;">
                             <a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a><span class="badge pull-right">{$article.create_time|date='Y-m-d',###}</span>
                         </li>
@@ -22,8 +22,8 @@
                 <div class="panel-footer">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="page pull-right">
-                                {$_page}
+                            <div class="page">
+                                    {$_page}
                             </div>
                         </div>
                     </div>

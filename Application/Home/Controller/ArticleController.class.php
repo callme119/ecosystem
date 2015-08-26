@@ -8,6 +8,7 @@
 // +----------------------------------------------------------------------
 
 namespace Home\Controller;
+use Home\Model\DocumentModel;
 
 /**
  * 文档模型控制器
@@ -19,18 +20,17 @@ class ArticleController extends HomeController {
 	public function index(){
 		/* 分类信息 */
 		$category = $this->category();
-
-		//频道页只显示模板，默认不读取任何内容
-		//内容可以通过模板标签自行定制
-		
-		$total = $category[list_row];
-		$listRows = 5;  
+		//取出分类的列表信息
+		$document = new DocumentModel;
+		$num = $document->lists($category[id]);	
+		//根据数组总数设置分页	
+		$total = count($num);
+		$listRows = 10;  
 		$page = new \Think\Page($total, $listRows);
         if($total>$listRows){
             $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
         }
         $p =$page->show();
-        
         $this->assign('_page', $p? $p: '');
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
