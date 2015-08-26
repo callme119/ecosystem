@@ -57,7 +57,6 @@ class ArticleController extends HomeController {
 			$article[$key][description] = $value[description];
 			$article[$key][id] = $value[id];
 		}
-		var_dump($list);
 		//调用分页
 		$total = count($article);
 		$listRows = 6;  
