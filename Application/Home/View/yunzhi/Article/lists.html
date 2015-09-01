@@ -10,7 +10,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <article:list name="value" category="$_GET['category']" child="true">
+                        <article:list name="value" row="6" category="$_GET['category']" child="true">
                         <div class="col-md-4">
                             <div class="thumbnail">
                                 <a  href="{:U('Article/detail?id='.$value['id'])}"><img alt="" src="__ROOT__/{:W('Picture/getPictureUrlById',array($value['cover_id']))}"></a>

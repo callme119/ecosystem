@@ -89,7 +89,11 @@ class CategoryModel extends Model{
      */
     public function getSameLevel($id, $field = true){
         $info = $this->info($id, 'pid');
-        $map = array('pid' => $info['pid'], 'status' => 1);
+        $map = array();
+        $map['pid'] = $info['pid'];
+        $map['status'] = 1;
+        $map['display'] = array('neq',0);
+        //$map = array('pid' => $info['pid'], 'status' => 1);
         return $this->field($field)->where($map)->order('sort')->select();
     }
 
